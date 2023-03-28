@@ -1,0 +1,46 @@
+{
+  "name": "up-ryse-portal",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app",
+    "check": "npm run format && npm run lint",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.+(js|yml|yaml|json)\"",
+    "debug": "NODE_ENV=development nodemon --inspect app.js"
+  },
+  "dependencies": {
+    "@google-cloud/secret-manager": "^3.10.1",
+    "@google-cloud/storage": "^5.8.5",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "helmet": "^4.6.0",
+    "json2csv": "^5.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.2",
+    "nodemailer-express-handlebars": "^5.0.0",
+    "nodemailer-sendgrid": "^1.0.3",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "xlsx": "^0.17.4"
+  },
+  "devDependencies": {
+    "@shopify/eslint-plugin": "^41.0.1",
+    "debug": "^4.3.3",
+    "eslint": "^8.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
+}

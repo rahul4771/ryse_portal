@@ -1,0 +1,14 @@
+{
+  "account": {
+    "status": {
+      "pending": "0",
+      "active": "1",
+      "deactivated": "3"
+    },
+    "roles": {
+      "administrator": "admin",
+      "systemUser": "user",
+      "customer": "customer"
+    }
+  }
+}

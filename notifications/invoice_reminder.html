@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <title>
+      Ryse Solutions Universal Portal - Invoice Reminder Notification for
+      {{adm_invoice_att}}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 2rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+          'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'DroidSans',
+          'Helvetica Neue', sans-serif;
+        color: #777;
+      }
+      h1 a:hover {
+        font-size: 30px;
+        color: #333;
+      }
+      h1 a:active {
+        font-size: 30px;
+        color: #333;
+      }
+      h1 a:visited {
+        font-size: 30px;
+        color: #333;
+      }
+      a:hover {
+        color: #1990c6;
+      }
+      a:active {
+        color: #1990c6;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          width: 94% !important;
+        }
+        .main-action-cell {
+          float: none !important;
+          margin-right: 0 !important;
+        }
+        .secondary-action-cell {
+          text-align: center;
+          width: 100%;
+        }
+        .header {
+          margin-top: 20px !important;
+          margin-bottom: 2px !important;
+        }
+        .shop-name__cell {
+          display: block;
+        }
+        .order-number__cell {
+          display: block;
+          text-align: left !important;
+          margin-top: 20px;
+        }
+        .button {
+          width: 100%;
+        }
+        .or {
+          margin-right: 0 !important;
+        }
+        .apple-wallet-button {
+          text-align: center;
+        }
+        .customer-info__item {
+          display: block;
+          width: 100% !important;
+        }
+        .spacer {
+          display: none;
+        }
+        .subtotal-spacer {
+          display: none;
+        }
+      }
+    </style>
+    <p>Hi {{company_name}},</p>
+    <p></p>
+    <h2 style="font-weight: normal; font-size: 24px; margin: 0 0 10px">
+      This is a reminder that your invoice is due on {{adm_due_date}}
+    </h2>
+    <p>
+      Invoice attributes : {{adm_invoice_att}}
+      <br />
+      <br />Invoice status : {{adm_invoice_status}}
+      <br />
+      <br />Invoice due date : {{adm_due_date}}
+      <br />
+      <br />Invoice period start : {{adm_period_start}}
+      <br />
+      <br />Invoice period end: {{adm_period_end }}
+      <br />
+      <br />Invoice due amount : {{adm_due_amount}}
+      <br />
+      <br />Invoice billing date : {{adm_billing_date}}
+    </p>
+    <p>
+      To download your invoice
+      <a href="${result[0].invoice_url}" target="_blank">click here</a>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      If you have further inquiries, we're here to help. Send us an email
+      anytime at
+      <a href="mailto:info@ryseinc.ca">info@ryseinc.ca.</a>
+    </p>
+    <p>Your experts in compliance,<br /></p>
+    <p>
+      <img
+        src="https://cdn.shopify.com/s/files/1/0021/0472/1466/files/ryse-portal-email-logo.png?v=1646327508"
+        alt="Ryse Inc Logo"
+        style="display: block"
+      />
+    </p>
+  </body>
+</html>
